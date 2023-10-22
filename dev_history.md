@@ -21,7 +21,6 @@ Wait for the download to complete. The file will be saved in your current workin
 
 ## Setup virtual environment:
 
-    cd GitRepo
     pip install virtualenv
     python -m venv TorScrapper_venv
     source TorScrapper_venv/bin/activate
@@ -46,7 +45,7 @@ Test TorScrapper:
 
     mkdir -p TorScrapper/Output
 
-    python Modules/Scraper/Scrape.py  http://torlinksge6enmcyyuxjpjkoouw4oorgdgeo7ftnq3zodj7g2zxi3kyd.onion/
+    python TorScrapper/Modules/Scraper/Scrape.py  http://torlinksge6enmcyyuxjpjkoouw4oorgdgeo7ftnq3zodj7g2zxi3kyd.onion/
 
 _Note:_ If you get a connection refused error like this: `ConnectionRefusedError: [Errno 111] Connection refused`, make sure that tor service is running, and try again.
 
@@ -148,3 +147,15 @@ for doc in solr.search('*:*',fl='title'):
 # ...or all documents.
 # solr.delete(q='*:*')
 ```
+
+forked and cloned own copy of torscrapper
+
+    git clone https://github.com/Rama4/TorScrapper.git
+
+added submodule
+
+    git submodule add https://github.com/Rama4/TorScrapper.git TorScrapper
+
+added TorScrapper authentication hash in env
+
+    pip install python-dotenv

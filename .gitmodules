@@ -1,0 +1,3 @@
+[submodule "TorScrapper"]
+	path = TorScrapper
+	url = https://github.com/little-endian-0x01/TorScrapper.git
