@@ -9,12 +9,12 @@ solr = pysolr.Solr('http://localhost:8983/solr/darkwebcore', timeout=10)
 solr.ping()
 
 # # How you'd index data.
-solr.add([
-    {
-        "id": "doc_1",
-        "title": "A test document",
-    },
-])
+# solr.add([
+#     {
+#         "id": "doc_1",
+#         "title": "A test document",
+#     },
+# ])
 
 # Traverse a cursor using its iterator:
 for doc in solr.search('*:*',fl='id',sort='id ASC',cursorMark='*'):

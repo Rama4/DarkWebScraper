@@ -159,3 +159,17 @@ added submodule
 added TorScrapper authentication hash in env
 
     pip install python-dotenv
+
+
+## Django server and solr search endpoint setup
+
+    pip install django
+    
+    django-admin startproject DarkWebScraperServer
+    
+    cd DarkWebScraperServer
+    python manage.py startapp myapp
+    
+
+Add endpoint for searching in solr
+    

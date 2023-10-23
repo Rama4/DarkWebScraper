@@ -1,0 +1,26 @@
+VENV:
+
+source TorScrapper_venv/bin/activate
+
+
+TOR:
+
+sudo /etc/init.d/tor restart
+
+
+python TorScrapper/Modules/Scraper/Scrape.py  http://torlinksge6enmcyyuxjpjkoouw4oorgdgeo7ftnq3zodj7g2zxi3kyd.onion/
+
+
+SOLR:
+
+./solr-9.4.0-slim/bin/solr start -force
+./solr-9.4.0-slim/bin/solr stop -force
+
+python run_pysolr.py
+
+
+SERVER:
+
+cd DarkWebScraperServer
+python manage.py runserver 0.0.0.0:8000
+
