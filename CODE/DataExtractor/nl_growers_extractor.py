@@ -47,7 +47,7 @@ with open("CODE/DataExtractor/Scraped-NLGrowers.html") as fp:
     products_json = [vars(ob) for ob in products]
 
     with open('DATA/nl_growers.json', 'w') as f:
-        json.dump(products_json, f)
+        json.dump(products_json, f, ensure_ascii=False, indent=4)
 
     print("All products", products_json)
 
