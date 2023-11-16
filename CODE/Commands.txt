@@ -24,3 +24,17 @@ SERVER:
 cd DarkWebScraperServer
 python manage.py runserver 0.0.0.0:8000
 
+
+
+https://darkwebscraper.run-us-west2.goorm.site/myapp/search?q=name:Bubblegum&fl=title,id
+https://darkwebscraper.run-us-west2.goorm.site/myapp/search?q=*:*&fl=name,id,quantity,quality,cost_eu,cost_btc
+
+curl http://0.0.0.0:8000/myapp
+
+curl http://localhost:8000/myapp
+
+curl -X GET -G "http://localhost:8000/myapp/search?q=title:*&fl=title,id"
+
+curl -X GET -G "http://localhost:8000/myapp/search?q=name:Bubblegum&fl=title,id"
+
+
