@@ -15,9 +15,10 @@
 <body>
 <div class="row">
     <div class="row1 col-lg-12" style="padding-right: 1px">
-        <div id="interface_header" class="card-body">Dark Web Crawling
+        <div id="interface_header" class="blur card-body">
         </div>  
     </div>
+    <div class="headerTitle">Dark Web Crawling</div>
 </div>
     <div class="row">
         <div class="row1 col-lg-12" style="padding-right: 1px">
@@ -27,12 +28,40 @@
                         <input id="search-bar" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button id="search-bar-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                       </form>
+                      <div class="checkboxPanel">
+                        <span class="checkboxPanelHeader">Search Fields </span>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="checkbox1" value="all" onclick="selectAllCheckboxes()">
+                            <label class="form-check-label" for="inlineCheckbox1">All</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="checkbox2" value="id" onclick="reevaluateAll(event)">
+                            <label class="form-check-label" for="inlineCheckbox2">ID</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="checkbox3" value="name" onclick="reevaluateAll(event)">
+                            <label class="form-check-label" for="inlineCheckbox2">Name</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="checkbox4" value="quantity" onclick="reevaluateAll(event)">
+                            <label class="form-check-label" for="inlineCheckbox3">Quantity</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="checkbox5" value="quality" onclick="reevaluateAll(event)">
+                            <label class="form-check-label" for="inlineCheckbox3">Quality</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="checkbox6" value="cost_eu" onclick="reevaluateAll(event)">
+                            <label class="form-check-label" for="inlineCheckbox3">Cost &euro;</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="checkbox7" value="cost_btc" onclick="reevaluateAll(event)">
+                            <label class="form-check-label" for="inlineCheckbox3">Cost &#8383;</label>
+                        </div>
+                    </div>
                 </div>
             </div>  
         </div>
     </div>
-
-
-
 </body>
 <script src="main.js"></script>
