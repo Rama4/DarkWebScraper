@@ -160,16 +160,102 @@ added TorScrapper authentication hash in env
 
     pip install python-dotenv
 
-
 ## Django server and solr search endpoint setup
 
     pip install django
-    
+
     django-admin startproject DarkWebScraperServer
-    
+
     cd DarkWebScraperServer
     python manage.py startapp myapp
-    
 
 Add endpoint for searching in solr
-    
+
+# Setup server on Windows machine:
+
+## Setup virtual environment:
+
+    pip install virtualenv
+    python -m venv project_env
+
+cmd:
+
+    cd ../project_env/Scripts
+    activate
+
+bash:
+
+    source ../project_env/Scripts/activate
+
+## solr create cores:
+
+### start solr server:
+
+    cd ../solr-9.4.0\bin
+    solr start
+
+### create core
+
+    cd ../solr-9.4.0\bin
+    solr start -e cloud
+
+give default options for all
+
+## install pysolr
+
+    pip install pysolr
+
+## start solr:
+
+    cd ../solr-9.4.0\bin
+    solr start -p 8983
+
+
+    solr stop -all
+
+## Windows Workflow steps
+
+_NOTE_: All commands are for windows cmd and with respect to project root folder.
+
+### 1. activate virtual env:
+
+    cmd
+
+    cd ../project_env/Scripts
+    activate
+    cd  ../../DarkWebScraper
+
+### 2. start solr:
+
+    cmd
+
+    cd ../project_env/Scripts
+    activate
+    cd  ../../DarkWebScraper
+
+    cd ../solr-9.4.0/bin
+    solr start -e cloud -noprompt
+    cd ../../DarkWebScraper
+
+### 3. start django server (new terminal):
+
+    cmd
+
+    cd ../project_env/Scripts
+    activate
+    cd  ../../DarkWebScraper
+
+
+    cd CODE/DarkWebScraperServer
+    python manage.py runserver
+
+### open CODE/Interface/index.html and test
+
+    cd CODE/Interface
+    start index.html
+
+### cleanup:
+
+    cmd
+    cd ../solr-9.4.0/bin
+    solr stop -all

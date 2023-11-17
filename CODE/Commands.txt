@@ -1,6 +1,15 @@
 VENV:
 
-source TorScrapper_venv/bin/activate
+
+windows cmd:
+
+    cd ../project_env/Scripts
+    activate
+
+bash:
+
+    source ../project_env/Scripts/activate
+
 
 
 TOR:
@@ -22,7 +31,14 @@ python run_pysolr.py
 SERVER:
 
 cd DarkWebScraperServer
-python manage.py runserver 0.0.0.0:8000
+
+localhost:
+
+    python manage.py runserver
+
+public server:
+
+    python manage.py runserver 0.0.0.0:8000
 
 
 
@@ -37,4 +53,54 @@ curl -X GET -G "http://localhost:8000/myapp/search?q=title:*&fl=title,id"
 
 curl -X GET -G "http://localhost:8000/myapp/search?q=name:Bubblegum&fl=title,id"
 
+
+
+====================================================================================================
+
+## Windows Workflow steps
+
+_NOTE_: All commands are for windows cmd and with respect to project root folder.
+
+### 1. activate virtual env:
+
+    cmd
+
+    cd ../project_env/Scripts
+    activate
+    cd  ../../DarkWebScraper
+
+### 2. start solr:
+
+    cmd
+
+    cd ../project_env/Scripts
+    activate
+    cd  ../../DarkWebScraper
+
+    cd ../solr-9.4.0/bin
+    solr start -e cloud -noprompt
+    cd ../../DarkWebScraper
+
+### 3. start django server (new terminal):
+
+    cmd
+
+    cd ../project_env/Scripts
+    activate
+    cd  ../../DarkWebScraper
+
+
+    cd CODE/DarkWebScraperServer
+    python manage.py runserver
+
+### open CODE/Interface/index.html and test
+
+    cd CODE/Interface
+    start index.html
+
+### cleanup:
+
+    cmd
+    cd ../solr-9.4.0/bin
+    solr stop -all
 

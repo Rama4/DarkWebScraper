@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-jjb_d=mq%8up&#+%t0zt$ne-1@3yxvda!ys-!j3k5iplmbp5f-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['darkwebscraper.run-us-west2.goorm.io','localhost']
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
 
 
 

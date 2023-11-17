@@ -3,13 +3,18 @@ from django.shortcuts import HttpResponse
 # Create your views here.
 from django.http import JsonResponse
 import pysolr
-import json
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+SOLR_URL = os.environ.get('SOLR_URL', '')
 
 def solr_search(searchString, outputFields="", order=""):
 
     # Setup a Solr instance. The timeout is optional.
     # solr = pysolr.Solr('http://localhost:8983/solr/', timeout=10)
-    solr = pysolr.Solr('http://localhost:8983/solr/darkwebcore', timeout=10)
+    solr = pysolr.Solr(SOLR_URL, timeout=30)
 
 
     # Do a health check.
@@ -28,8 +33,9 @@ def solr_search(searchString, outputFields="", order=""):
 
 
 def home(request):
-    return HttpResponse('Hello!!')
-
+    response = HttpResponse('This is DarkWebScraper server!')
+    response['Access-Control-Allow-Origin'] = 'null'
+    return response
 
 def search(request):
     query = request.GET.get('q', '')
@@ -45,6 +51,11 @@ def search(request):
     
     print(res)
     
-# Return the results as a JsonResponse.
-    # return HttpResponse('Hello!!')
-    return JsonResponse(res,safe=False)
+    # Return the results as a JsonResponse.
+    response = JsonResponse(res,safe=False)
+
+    # Set the Access-Control-Allow-Origin header
+    response['Access-Control-Allow-Origin'] = 'null'
+
+    # Return the response with the custom header
+    return response
