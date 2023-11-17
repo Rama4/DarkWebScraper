@@ -10,6 +10,10 @@ let checkbox5 = document.getElementById("checkbox5");
 let checkbox6 = document.getElementById("checkbox6");
 let checkbox7 = document.getElementById("checkbox7");
 
+$(document).ready(function() { 
+  selectAllCheckboxes();
+ });
+
 function handleSearch(event) {
   // Get the value from the search bar
   var searchTerm = document.getElementById("search-bar").value;
@@ -161,6 +165,7 @@ function getAllSearchFields() {
 
 function selectAllCheckboxes() {
 
+  checkbox1.checked = true;
   checkbox2.checked = true;
   checkbox3.checked = true;
   checkbox4.checked = true;
