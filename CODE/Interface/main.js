@@ -158,3 +158,19 @@ function getAllSearchFields() {
   }
   return searchFields;
 }
+
+function selectAllCheckboxes() {
+
+  checkbox2.checked = true;
+  checkbox3.checked = true;
+  checkbox4.checked = true;
+  checkbox5.checked = true;
+  checkbox6.checked = true;
+  checkbox7.checked = true;
+}
+
+function reevaluateAll(event) {
+  if (!event.target.checked) {
+      checkbox1.checked = false;
+  }
+}
