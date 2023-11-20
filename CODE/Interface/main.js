@@ -84,7 +84,6 @@ function displayTable(jsonData, errmsg) {
     const newMessageElement = document.createElement("h3");
     newMessageElement.style.textAlign = "center"; // Center the message text
     newMessageElement.style.width = "100%"; // Set the width of the message to 100%
-    newMessageElement.style.color = "white"; // Set the width of the message to 100%
     newMessageElement.innerText = errmsg ?? "No results found!";
     newMessageElement.setAttribute("id", "resultsMessage");
 

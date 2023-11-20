@@ -42,7 +42,7 @@ body {
 }
 
 .headerTitle {
-    color: white;
+    color: #20C20E;
     position: relative;
     text-align: center;
     font-size: 30px;
@@ -126,13 +126,26 @@ body {
 .checkboxPanel {
     padding-left: 60px;
     margin: 20px;
+    color: #20C20E;
 }
 
 .checkboxPanelHeader {
-    color: white;
+    color: #20C20E;
     padding: 20px;
 }
 
 #resultsTableContainer {
-  color: white;
+  color: #20C20E;
+}
+
+.btn-outline-success {
+  color: #20C20E;
+  --bs-btn-hover-bg: #20C20E;
+  --bs-btn-border-color: #20C20E;
+  --bs-btn-hover-border-color: #20C20E;
+}
+
+#search-bar {
+  background-color: black;
+  color:#20C20E;
 }
