@@ -2,6 +2,9 @@ import pysolr
 import json
 import os
 from dotenv import load_dotenv
+import time
+
+start_time = time.time()  # Start timer
 
 
 # Load environment variables from .env file
@@ -19,6 +22,11 @@ with open('../../DATA/nl_growers.json') as f:
 
 solr.add(data)
 print("data successfully indexed in solr!")
+
+end_time = time.time()  # End timer
+
+elapsed_time = end_time - start_time  # Calculate elapsed time
+print("Elapsed time: ", elapsed_time, "seconds")
 #==============================================================================
 # Testing code
 
