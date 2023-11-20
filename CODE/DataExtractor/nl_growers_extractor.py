@@ -13,7 +13,7 @@ class Product:
         self.cost_btc = cost_btc
         self.quality = quality
 
-with open("CODE/DataExtractor/Scraped-NLGrowers.html") as fp:
+with open("./Scraped-NLGrowers.html") as fp:
     response = BeautifulSoup(fp, 'html.parser')
     products = []
 
@@ -46,7 +46,7 @@ with open("CODE/DataExtractor/Scraped-NLGrowers.html") as fp:
 
     products_json = [vars(ob) for ob in products]
 
-    with open('DATA/nl_growers.json', 'w') as f:
+    with open('../../DATA/nl_growers.json', 'w') as f:
         json.dump(products_json, f, ensure_ascii=False, indent=4)
 
     print("All products", products_json)

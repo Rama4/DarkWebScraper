@@ -4,7 +4,7 @@
         "name": "Original Haze",
         "quantity": "1g",
         "cost_eu": "15 EUR",
-        "cost_btc": "0.00057 ฿",
+        "cost_btc": "0.00057 BTC",
         "quality": ""
     },
     {
@@ -12,7 +12,7 @@
         "name": "Original Haze",
         "quantity": "5g",
         "cost_eu": "65 EUR",
-        "cost_btc": "0.00248 ฿",
+        "cost_btc": "0.00248 BTC",
         "quality": ""
     },
     {
@@ -20,7 +20,7 @@
         "name": "Original Haze",
         "quantity": "10g",
         "cost_eu": "110 EUR",
-        "cost_btc": "0.00419 ฿",
+        "cost_btc": "0.00419 BTC",
         "quality": ""
     },
     {
@@ -28,7 +28,7 @@
         "name": "Original Haze",
         "quantity": "50g",
         "cost_eu": "550 EUR",
-        "cost_btc": "0.02096 ฿",
+        "cost_btc": "0.02096 BTC",
         "quality": ""
     },
     {
@@ -36,7 +36,7 @@
         "name": "Bubblegum",
         "quantity": "1g",
         "cost_eu": "10 EUR",
-        "cost_btc": "0.00038 ฿",
+        "cost_btc": "0.00038 BTC",
         "quality": ""
     },
     {
@@ -44,7 +44,7 @@
         "name": "Bubblegum",
         "quantity": "5g",
         "cost_eu": "45 EUR",
-        "cost_btc": "0.00171 ฿",
+        "cost_btc": "0.00171 BTC",
         "quality": ""
     },
     {
@@ -52,7 +52,7 @@
         "name": "Bubblegum",
         "quantity": "10g",
         "cost_eu": "85 EUR",
-        "cost_btc": "0.00324 ฿",
+        "cost_btc": "0.00324 BTC",
         "quality": ""
     },
     {
@@ -60,7 +60,7 @@
         "name": "Bubblegum",
         "quantity": "50g",
         "cost_eu": "450 EUR",
-        "cost_btc": "0.01715 ฿",
+        "cost_btc": "0.01715 BTC",
         "quality": ""
     },
     {
@@ -68,7 +68,7 @@
         "name": "Jack Herer",
         "quantity": "1g",
         "cost_eu": "14 EUR",
-        "cost_btc": "0.00053 ฿",
+        "cost_btc": "0.00053 BTC",
         "quality": ""
     },
     {
@@ -76,7 +76,7 @@
         "name": "Jack Herer",
         "quantity": "5g",
         "cost_eu": "60 EUR",
-        "cost_btc": "0.00229 ฿",
+        "cost_btc": "0.00229 BTC",
         "quality": ""
     },
     {
@@ -84,7 +84,7 @@
         "name": "Jack Herer",
         "quantity": "10g",
         "cost_eu": "110 EUR",
-        "cost_btc": "0.00419 ฿",
+        "cost_btc": "0.00419 BTC",
         "quality": ""
     },
     {
@@ -92,7 +92,7 @@
         "name": "Jack Herer",
         "quantity": "50g",
         "cost_eu": "480 EUR",
-        "cost_btc": "0.01829 ฿",
+        "cost_btc": "0.01829 BTC",
         "quality": ""
     },
     {
@@ -100,7 +100,7 @@
         "name": "Chronic",
         "quantity": "1g",
         "cost_eu": "9 EUR",
-        "cost_btc": "0.00034 ฿",
+        "cost_btc": "0.00034 BTC",
         "quality": ""
     },
     {
@@ -108,7 +108,7 @@
         "name": "Chronic",
         "quantity": "5g",
         "cost_eu": "40 EUR",
-        "cost_btc": "0.00152 ฿",
+        "cost_btc": "0.00152 BTC",
         "quality": ""
     },
     {
@@ -116,7 +116,7 @@
         "name": "Chronic",
         "quantity": "50g",
         "cost_eu": "350 EUR",
-        "cost_btc": "0.01334 ฿",
+        "cost_btc": "0.01334 BTC",
         "quality": ""
     },
     {
@@ -124,7 +124,7 @@
         "name": "Banana Kush",
         "quantity": "1g",
         "cost_eu": "11 EUR",
-        "cost_btc": "0.00042 ฿",
+        "cost_btc": "0.00042 BTC",
         "quality": ""
     },
     {
@@ -132,7 +132,7 @@
         "name": "Banana Kush",
         "quantity": "5g",
         "cost_eu": "45 EUR",
-        "cost_btc": "0.00171 ฿",
+        "cost_btc": "0.00171 BTC",
         "quality": ""
     },
     {
@@ -140,7 +140,7 @@
         "name": "Banana Kush",
         "quantity": "50g",
         "cost_eu": "400 EUR",
-        "cost_btc": "0.01524 ฿",
+        "cost_btc": "0.01524 BTC",
         "quality": ""
     },
     {
@@ -148,7 +148,7 @@
         "name": "Blue Cheese",
         "quantity": "1g",
         "cost_eu": "9 EUR",
-        "cost_btc": "0.00034 ฿",
+        "cost_btc": "0.00034 BTC",
         "quality": ""
     },
     {
@@ -156,7 +156,7 @@
         "name": "Blue Cheese",
         "quantity": "5g",
         "cost_eu": "40 EUR",
-        "cost_btc": "0.00152 ฿",
+        "cost_btc": "0.00152 BTC",
         "quality": ""
     },
     {
@@ -164,7 +164,7 @@
         "name": "Blue Cheese",
         "quantity": "25g",
         "cost_eu": "180 EUR",
-        "cost_btc": "0.00686 ฿",
+        "cost_btc": "0.00686 BTC",
         "quality": ""
     },
     {
@@ -172,7 +172,7 @@
         "name": "Ice-O-Lator Hash",
         "quantity": "1g",
         "cost_eu": "35 EUR",
-        "cost_btc": "0.00133 ฿",
+        "cost_btc": "0.00133 BTC",
         "quality": "finest quality"
     },
     {
@@ -180,7 +180,7 @@
         "name": "Ice-O-Lator Hash",
         "quantity": "5g",
         "cost_eu": "125 EUR",
-        "cost_btc": "0.00476 ฿",
+        "cost_btc": "0.00476 BTC",
         "quality": "finest quality"
     }
 ]
